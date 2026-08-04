@@ -33,10 +33,10 @@ python3 -m http.server 8000
 
 ### Вариант A · GitHub Pages (рекомендую)
 
-1. Создайте репозиторий на GitHub (например `invite-ayana`).
+1. Создайте репозиторий на GitHub (например `invite-aiana`).
 2. Загрузите в него все файлы из этой папки (можно через веб-интерфейс: **Add file → Upload files**).
 3. **Settings → Pages → Build and deployment**: Source = `Deploy from a branch`, Branch = `main`, папка `/ (root)` → **Save**.
-4. Через ~1 минуту сайт будет доступен по адресу `https://<ваш-логин>.github.io/invite-ayana/`.
+4. Через ~1 минуту сайт будет доступен по адресу `https://<ваш-логин>.github.io/invite-aiana/`.
 
 Через терминал:
 
@@ -44,7 +44,7 @@ python3 -m http.server 8000
 cd invite_uzatuu
 git init && git add . && git commit -m "invite"
 git branch -M main
-git remote add origin https://github.com/<логин>/invite-ayana.git
+git remote add origin https://github.com/<логин>/invite-aiana.git
 git push -u origin main
 ```
 
@@ -101,4 +101,4 @@ const RSVP_ENDPOINT = "https://script.google.com/macros/s/......../exec";
 | Заголовок вкладки | `index.html` → `<title>` |
 
 День недели в датах прописан вручную (`среда / шаршемби / Wednesday`) — при смене даты поправьте и его.
-# ayana_uzatuu
+# aiana_uzatuu
