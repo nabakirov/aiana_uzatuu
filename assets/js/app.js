@@ -280,21 +280,23 @@ form.addEventListener("submit", async (e) => {
 
   try {
     if (RSVP_ENDPOINT) {
-      const body = new URLSearchParams({
-        name: name,
-        guests: String(guests),
-        lang: currentLang,
+      const payload = { name: name, guests: String(guests), lang: currentLang };
+      await fetch(RSVP_ENDPOINT, {
+        method: "POST",
+        mode: "no-cors",
+        body: new URLSearchParams(payload),
       });
-      await fetch(RSVP_ENDPOINT, { method: "POST", mode: "no-cors", body });
+      // Примечание: при no-cors ответ непрозрачный — код/тело сервера прочитать
+      // нельзя, поэтому успех показываем оптимистично. Условие корректной записи —
+      // развёртывание Apps Script с доступом «Все» (см. README).
     } else {
-      // демо-режим: endpoint ещё не настроен
-      console.warn("RSVP_ENDPOINT не задан — ответ не сохранён (демо-режим).");
+      console.warn("[RSVP] RSVP_ENDPOINT не задан — ответ не сохранён (демо-режим).");
       await new Promise((r) => setTimeout(r, 600));
     }
     form.classList.add("hidden");
     successBox.classList.remove("hidden");
   } catch (err) {
-    console.error(err);
+    console.error("[RSVP] ошибка отправки:", err);
     msg.textContent = t("err.send");
     msg.classList.add("error");
     submitBtn.disabled = false;
