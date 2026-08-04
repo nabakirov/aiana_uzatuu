@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Аяна — Кыз узатуу · 26.08.2026</title>
+  <meta name="description" content="Приглашение на кыз узатуу — Аяна · 26 августа 2026" />
+  <meta name="theme-color" content="#fbf5f1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- Falling petals layer -->
+  <div id="petals" class="petals" aria-hidden="true"></div>
+
+  <!-- ===================== SCREEN 1 · LANGUAGE ===================== -->
+  <section id="lang-screen" class="overlay">
+    <div class="lang-card fade-up">
+      <span class="sprig" aria-hidden="true"></span>
+      <p class="lang-title">Тил · Язык · Language</p>
+      <div class="divider"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+      <div class="lang-buttons">
+        <button class="lang-btn" data-lang="kg">Кыргызча</button>
+        <button class="lang-btn" data-lang="ru">Русский</button>
+        <button class="lang-btn" data-lang="en">English</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SCREEN 2 · ENVELOPE ===================== -->
+  <section id="envelope-screen" class="overlay hidden">
+    <div class="envelope-wrap">
+      <button class="envelope" id="envelope" aria-label="Открыть приглашение">
+        <span class="letter">
+          <span class="letter-inner">
+            <span class="letter-sub" data-i18n="uzatuu.word">кыз узатуу</span>
+            <span class="letter-name" data-i18n="hero.name">Аяна</span>
+            <span class="letter-flourish">&#10086;</span>
+          </span>
+        </span>
+        <span class="env-back"></span>
+        <span class="env-front"></span>
+        <span class="env-flap"></span>
+        <span class="env-seal">Аяна</span>
+      </button>
+      <p class="env-hint" data-i18n="envelope.hint">нажмите, чтобы открыть</p>
+    </div>
+  </section>
+
+  <!-- ===================== MAIN INVITATION ===================== -->
+  <main id="main" class="hidden">
+
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="frame"></div>
+      <div class="floral-top" aria-hidden="true"></div>
+      <span class="corner tl" aria-hidden="true"></span>
+      <span class="corner tr" aria-hidden="true"></span>
+      <span class="corner bl" aria-hidden="true"></span>
+      <span class="corner br" aria-hidden="true"></span>
+
+      <div class="hero-content reveal">
+        <p class="script-line" data-i18n="hero.invite">Приглашаем вас на кыз узатуу нашей дочери</p>
+        <h1 class="names" data-i18n="hero.name">Аяна</h1>
+        <div class="divider small"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+        <p class="date-line" data-i18n="hero.date">среда · 26 августа 2026</p>
+
+        <div class="countdown" id="countdown" aria-hidden="true">
+          <div class="cd-cell"><span class="cd-num" id="cd-days">00</span><span class="cd-lbl" data-i18n="cd.days">дней</span></div>
+          <span class="cd-sep">:</span>
+          <div class="cd-cell"><span class="cd-num" id="cd-hours">00</span><span class="cd-lbl" data-i18n="cd.hours">часов</span></div>
+          <span class="cd-sep">:</span>
+          <div class="cd-cell"><span class="cd-num" id="cd-mins">00</span><span class="cd-lbl" data-i18n="cd.mins">минут</span></div>
+          <span class="cd-sep">:</span>
+          <div class="cd-cell"><span class="cd-num" id="cd-secs">00</span><span class="cd-lbl" data-i18n="cd.secs">секунд</span></div>
+        </div>
+
+        <p class="tagline" data-i18n="hero.tagline">Подарите нашей дочери своё тёплое благословение</p>
+      </div>
+    </section>
+
+    <!-- WHERE & WHEN -->
+    <section class="section where">
+      <div class="reveal">
+        <span class="sprig" aria-hidden="true"></span>
+        <p class="eyebrow" data-i18n="where.title">ГДЕ И КОГДА</p>
+        <div class="divider small"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+        <h2 class="venue" data-i18n="where.venue">Ресторан «Arna»</h2>
+        <p class="address" data-i18n="where.address">улица Курманжан Датка, 152, Бишкек</p>
+        <p class="time" data-i18n="where.time">начало в 16:00</p>
+        <div class="map-buttons">
+          <a class="btn" href="https://2gis.kg/bishkek/geo/70000001112761356" target="_blank" rel="noopener" data-i18n="where.btn2gis">Открыть в 2ГИС</a>
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Arna%20%D0%9A%D1%83%D1%80%D0%BC%D0%B0%D0%BD%D0%B6%D0%B0%D0%BD%20%D0%94%D0%B0%D1%82%D0%BA%D0%B0%20152%20%D0%91%D0%B8%D1%88%D0%BA%D0%B5%D0%BA" target="_blank" rel="noopener" data-i18n="where.btnmaps">Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="section rsvp">
+      <div class="reveal">
+        <span class="sprig" aria-hidden="true"></span>
+        <p class="eyebrow" data-i18n="rsvp.title">ПОДТВЕРЖДЕНИЕ</p>
+        <div class="divider small"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+        <h2 class="rsvp-q" data-i18n="rsvp.question">Придёте на праздник?</h2>
+        <p class="rsvp-note" data-i18n="rsvp.note">Пожалуйста, сообщите до 12 августа — чтобы мы точно рассчитали места.</p>
+
+        <form id="rsvp-form" class="rsvp-form" novalidate>
+          <label class="field">
+            <span class="field-lbl" data-i18n="rsvp.name">Ваше имя</span>
+            <input type="text" name="name" id="rsvp-name" required autocomplete="name" data-i18n-ph="rsvp.namePh" placeholder="Имя и фамилия" />
+          </label>
+          <label class="field">
+            <span class="field-lbl" data-i18n="rsvp.guests">Количество гостей</span>
+            <input type="number" name="guests" id="rsvp-guests" min="1" max="30" step="1" value="1" required inputmode="numeric" />
+          </label>
+          <button type="submit" class="btn btn-solid" id="rsvp-submit" data-i18n="rsvp.submit">Подтвердить</button>
+          <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="rsvp-success hidden" id="rsvp-success">
+          <span class="success-mark">&#10003;</span>
+          <p data-i18n="rsvp.success">Спасибо! Ваш ответ принят.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="section closing">
+      <div class="reveal">
+        <span class="sprig" aria-hidden="true"></span>
+        <div class="divider small"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+        <p class="closing-text" data-i18n="closing.text">Будем счастливы разделить с вами этот радостный день.</p>
+        <p class="closing-sign" data-i18n="closing.sign">С любовью, родители</p>
+        <p class="closing-name" data-i18n="closing.name">Аяна · 26.08.2026</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

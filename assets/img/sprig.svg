@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 74" fill="none">
+  <defs>
+    <radialGradient id="sp" cx="38%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#fdeeea"/>
+      <stop offset="55%" stop-color="#f2cfc7"/>
+      <stop offset="100%" stop-color="#dda49a"/>
+    </radialGradient>
+    <radialGradient id="spL" cx="40%" cy="34%" r="74%">
+      <stop offset="0%" stop-color="#fff7f4"/>
+      <stop offset="60%" stop-color="#f6ddd6"/>
+      <stop offset="100%" stop-color="#e6b7ad"/>
+    </radialGradient>
+    <radialGradient id="sc" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e9c877"/>
+      <stop offset="100%" stop-color="#c2a05f"/>
+    </radialGradient>
+    <linearGradient id="slf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bcc6a6"/>
+      <stop offset="100%" stop-color="#8b9a72"/>
+    </linearGradient>
+    <g id="sfl">
+      <ellipse cx="0" cy="-11" rx="7" ry="11" fill="url(#sp)"/>
+      <ellipse cx="10.5" cy="-3.4" rx="7" ry="11" fill="url(#sp)" transform="rotate(72 10.5 -3.4)"/>
+      <ellipse cx="6.5" cy="9" rx="7" ry="11" fill="url(#sp)" transform="rotate(144 6.5 9)"/>
+      <ellipse cx="-6.5" cy="9" rx="7" ry="11" fill="url(#sp)" transform="rotate(216 -6.5 9)"/>
+      <ellipse cx="-10.5" cy="-3.4" rx="7" ry="11" fill="url(#sp)" transform="rotate(288 -10.5 -3.4)"/>
+      <circle r="4.2" fill="url(#sc)"/>
+    </g>
+    <g id="sflL">
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="url(#spL)"/>
+      <ellipse cx="8.6" cy="-2.8" rx="6" ry="9" fill="url(#spL)" transform="rotate(72 8.6 -2.8)"/>
+      <ellipse cx="5.3" cy="7.3" rx="6" ry="9" fill="url(#spL)" transform="rotate(144 5.3 7.3)"/>
+      <ellipse cx="-5.3" cy="7.3" rx="6" ry="9" fill="url(#spL)" transform="rotate(216 -5.3 7.3)"/>
+      <ellipse cx="-8.6" cy="-2.8" rx="6" ry="9" fill="url(#spL)" transform="rotate(288 -8.6 -2.8)"/>
+      <circle r="3.6" fill="url(#sc)"/>
+    </g>
+  </defs>
+
+  <g stroke="#a9b48f" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M110 40 C 84 40, 60 38, 34 30"/>
+    <path d="M110 40 C 136 40, 160 38, 186 30"/>
+  </g>
+  <g>
+    <g transform="translate(72 34) rotate(-16)"><ellipse rx="15" ry="6" fill="url(#slf)" opacity="0.8"/></g>
+    <g transform="translate(148 34) rotate(16)"><ellipse rx="15" ry="6" fill="url(#slf)" opacity="0.8"/></g>
+    <g transform="translate(96 44) rotate(-8)"><ellipse rx="11" ry="4.5" fill="url(#slf)" opacity="0.6"/></g>
+    <g transform="translate(124 44) rotate(8)"><ellipse rx="11" ry="4.5" fill="url(#slf)" opacity="0.6"/></g>
+  </g>
+  <use href="#sfl"  transform="translate(110 34) scale(1.1)"/>
+  <use href="#sflL" transform="translate(58 26) scale(0.85)"/>
+  <use href="#sflL" transform="translate(162 26) scale(0.85)"/>
+  <circle cx="30" cy="29" r="4" fill="url(#spL)" opacity="0.9"/>
+  <circle cx="190" cy="29" r="4" fill="url(#spL)" opacity="0.9"/>
+</svg>

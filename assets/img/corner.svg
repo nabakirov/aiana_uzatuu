@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none">
+  <defs>
+    <radialGradient id="p" cx="38%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#fdeeea"/>
+      <stop offset="55%" stop-color="#f2cfc7"/>
+      <stop offset="100%" stop-color="#dda49a"/>
+    </radialGradient>
+    <radialGradient id="pL" cx="40%" cy="34%" r="74%">
+      <stop offset="0%" stop-color="#fff7f4"/>
+      <stop offset="60%" stop-color="#f6ddd6"/>
+      <stop offset="100%" stop-color="#e6b7ad"/>
+    </radialGradient>
+    <radialGradient id="c" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e9c877"/>
+      <stop offset="100%" stop-color="#c2a05f"/>
+    </radialGradient>
+    <linearGradient id="lf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bcc6a6"/>
+      <stop offset="100%" stop-color="#8b9a72"/>
+    </linearGradient>
+
+    <g id="fl">
+      <ellipse cx="0" cy="-16" rx="10" ry="16" fill="url(#p)"/>
+      <ellipse cx="15" cy="-5" rx="10" ry="16" fill="url(#p)" transform="rotate(72 15 -5)"/>
+      <ellipse cx="9" cy="13" rx="10" ry="16" fill="url(#p)" transform="rotate(144 9 13)"/>
+      <ellipse cx="-9" cy="13" rx="10" ry="16" fill="url(#p)" transform="rotate(216 -9 13)"/>
+      <ellipse cx="-15" cy="-5" rx="10" ry="16" fill="url(#p)" transform="rotate(288 -15 -5)"/>
+      <circle r="6" fill="url(#c)"/>
+    </g>
+    <g id="flL">
+      <ellipse cx="0" cy="-16" rx="10" ry="16" fill="url(#pL)"/>
+      <ellipse cx="15" cy="-5" rx="10" ry="16" fill="url(#pL)" transform="rotate(72 15 -5)"/>
+      <ellipse cx="9" cy="13" rx="10" ry="16" fill="url(#pL)" transform="rotate(144 9 13)"/>
+      <ellipse cx="-9" cy="13" rx="10" ry="16" fill="url(#pL)" transform="rotate(216 -9 13)"/>
+      <ellipse cx="-15" cy="-5" rx="10" ry="16" fill="url(#pL)" transform="rotate(288 -15 -5)"/>
+      <circle r="6" fill="url(#c)"/>
+    </g>
+  </defs>
+
+  <!-- stems -->
+  <g stroke="#a9b48f" stroke-width="1.7" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M34 34 C 100 44, 150 40, 224 66"/>
+    <path d="M34 34 C 44 100, 40 150, 66 224"/>
+    <path d="M60 60 C 96 96, 120 120, 150 132"/>
+    <path d="M120 56 C 116 92, 132 116, 150 132"/>
+  </g>
+
+  <!-- leaves -->
+  <g>
+    <g transform="translate(96 50) rotate(18)"><ellipse rx="24" ry="9" fill="url(#lf)" opacity="0.85"/></g>
+    <g transform="translate(50 96) rotate(72)"><ellipse rx="24" ry="9" fill="url(#lf)" opacity="0.85"/></g>
+    <g transform="translate(170 58) rotate(24)"><ellipse rx="20" ry="7.5" fill="url(#lf)" opacity="0.7"/></g>
+    <g transform="translate(58 170) rotate(66)"><ellipse rx="20" ry="7.5" fill="url(#lf)" opacity="0.7"/></g>
+    <g transform="translate(118 108) rotate(45)"><ellipse rx="18" ry="7" fill="url(#lf)" opacity="0.65"/></g>
+  </g>
+
+  <!-- blossoms -->
+  <use href="#fl"  transform="translate(46 46) scale(1.35)"/>
+  <use href="#flL" transform="translate(112 58) scale(1.0)"/>
+  <use href="#flL" transform="translate(58 112) scale(1.0)"/>
+  <use href="#fl"  transform="translate(150 132) scale(0.9)"/>
+  <use href="#fl"  transform="translate(206 74) scale(0.7)"/>
+  <use href="#fl"  transform="translate(74 206) scale(0.7)"/>
+
+  <!-- buds -->
+  <g>
+    <use href="#flL" transform="translate(236 62) scale(0.42)"/>
+    <use href="#flL" transform="translate(62 236) scale(0.42)"/>
+    <circle cx="150" cy="132" r="0" fill="url(#pL)"/>
+    <circle cx="188" cy="112" r="6" fill="url(#pL)" opacity="0.9"/>
+    <circle cx="112" cy="188" r="6" fill="url(#pL)" opacity="0.9"/>
+  </g>
+</svg>

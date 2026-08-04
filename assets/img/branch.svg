@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 230" fill="none">
+  <defs>
+    <radialGradient id="pet" cx="38%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#fdeeea"/>
+      <stop offset="55%" stop-color="#f2cfc7"/>
+      <stop offset="100%" stop-color="#dda49a"/>
+    </radialGradient>
+    <radialGradient id="petL" cx="40%" cy="34%" r="74%">
+      <stop offset="0%" stop-color="#fff7f4"/>
+      <stop offset="60%" stop-color="#f6ddd6"/>
+      <stop offset="100%" stop-color="#e6b7ad"/>
+    </radialGradient>
+    <radialGradient id="ctr" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e9c877"/>
+      <stop offset="100%" stop-color="#c2a05f"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bcc6a6"/>
+      <stop offset="100%" stop-color="#8b9a72"/>
+    </linearGradient>
+
+    <g id="B">
+      <ellipse cx="0" cy="-19" rx="12" ry="19" fill="url(#pet)"/>
+      <ellipse cx="18" cy="-6" rx="12" ry="19" fill="url(#pet)" transform="rotate(72 18 -6)"/>
+      <ellipse cx="11" cy="15" rx="12" ry="19" fill="url(#pet)" transform="rotate(144 11 15)"/>
+      <ellipse cx="-11" cy="15" rx="12" ry="19" fill="url(#pet)" transform="rotate(216 -11 15)"/>
+      <ellipse cx="-18" cy="-6" rx="12" ry="19" fill="url(#pet)" transform="rotate(288 -18 -6)"/>
+      <circle r="7.5" fill="url(#ctr)"/>
+    </g>
+    <g id="BL">
+      <ellipse cx="0" cy="-19" rx="12" ry="19" fill="url(#petL)"/>
+      <ellipse cx="18" cy="-6" rx="12" ry="19" fill="url(#petL)" transform="rotate(72 18 -6)"/>
+      <ellipse cx="11" cy="15" rx="12" ry="19" fill="url(#petL)" transform="rotate(144 11 15)"/>
+      <ellipse cx="-11" cy="15" rx="12" ry="19" fill="url(#petL)" transform="rotate(216 -11 15)"/>
+      <ellipse cx="-18" cy="-6" rx="12" ry="19" fill="url(#petL)" transform="rotate(288 -18 -6)"/>
+      <circle r="7.5" fill="url(#ctr)"/>
+    </g>
+  </defs>
+
+  <!-- stems -->
+  <g stroke="#a9b48f" stroke-width="1.7" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M410 12 C 300 24, 205 42, 110 100"/>
+    <path d="M410 12 C 520 24, 615 42, 710 100"/>
+    <path d="M300 32 C 275 74, 245 96, 200 110"/>
+    <path d="M520 32 C 545 74, 575 96, 620 110"/>
+    <path d="M360 22 C 330 48, 250 60, 150 70"/>
+    <path d="M460 22 C 490 48, 570 60, 670 70"/>
+  </g>
+
+  <!-- leaves -->
+  <g>
+    <g transform="translate(250 46) rotate(-32)"><ellipse rx="28" ry="10" fill="url(#leaf)" opacity="0.85"/></g>
+    <g transform="translate(570 46) rotate(32)"><ellipse rx="28" ry="10" fill="url(#leaf)" opacity="0.85"/></g>
+    <g transform="translate(178 74) rotate(-14)"><ellipse rx="24" ry="9" fill="url(#leaf)" opacity="0.72"/></g>
+    <g transform="translate(642 74) rotate(14)"><ellipse rx="24" ry="9" fill="url(#leaf)" opacity="0.72"/></g>
+    <g transform="translate(345 42) rotate(-20)"><ellipse rx="22" ry="8" fill="url(#leaf)" opacity="0.62"/></g>
+    <g transform="translate(475 42) rotate(20)"><ellipse rx="22" ry="8" fill="url(#leaf)" opacity="0.62"/></g>
+    <g transform="translate(120 96) rotate(-6)"><ellipse rx="20" ry="7.5" fill="url(#leaf)" opacity="0.6"/></g>
+    <g transform="translate(700 96) rotate(6)"><ellipse rx="20" ry="7.5" fill="url(#leaf)" opacity="0.6"/></g>
+  </g>
+
+  <!-- blossoms -->
+  <use href="#B"  transform="translate(410 36) scale(1.25)"/>
+  <use href="#BL" transform="translate(150 104) scale(1.05)"/>
+  <use href="#BL" transform="translate(670 104) scale(1.05)"/>
+  <use href="#B"  transform="translate(300 66) scale(0.85)"/>
+  <use href="#B"  transform="translate(520 66) scale(0.85)"/>
+  <use href="#BL" transform="translate(225 86) scale(0.7)"/>
+  <use href="#BL" transform="translate(595 86) scale(0.7)"/>
+  <use href="#B"  transform="translate(360 52) scale(0.6)"/>
+  <use href="#B"  transform="translate(460 52) scale(0.6)"/>
+
+  <!-- buds -->
+  <g fill="url(#petL)" opacity="0.9">
+    <circle cx="100" cy="104" r="7"/>
+    <circle cx="720" cy="104" r="7"/>
+    <circle cx="185" cy="72" r="5"/>
+    <circle cx="635" cy="72" r="5"/>
+    <circle cx="345" cy="86" r="4.5"/>
+    <circle cx="475" cy="86" r="4.5"/>
+  </g>
+</svg>

@@ -11,7 +11,7 @@ invite_uzatuu/
 ├── assets/
 │   ├── css/styles.css     — стили и анимации
 │   ├── js/app.js          — переводы, конверт, таймер, лепестки, форма
-│   └── img/branch.svg     — цветочная ветка (верх)
+│   └── img/               — branch.svg (ветка сверху), corner.svg (углы), sprig.svg (веточки)
 ├── google-apps-script.gs — код для Google-таблицы (бэкенд RSVP)
 └── README.md
 ```
@@ -94,7 +94,8 @@ const RSVP_ENDPOINT = "https://script.google.com/macros/s/......../exec";
 |-----|-----|
 | Имя, тексты, переводы (3 языка) | `assets/js/app.js` → объект `I18N` |
 | Дата/время события и отсчёта | `assets/js/app.js` → `EVENT_DATE` |
-| Буква на печати конверта | `index.html` → `<span class="env-seal">А</span>` |
+| Надпись на печати конверта | `index.html` → `<span class="env-seal">Аяна</span>` |
+| Цветочное оформление | `assets/img/branch.svg`, `corner.svg`, `sprig.svg` |
 | Ссылки на карту (2ГИС / Google Maps) | `index.html`, секция «where» (атрибуты `href`) |
 | Цвета оформления | `assets/css/styles.css` → блок `:root` (переменные `--rose`, `--gold`, `--blush`, `--cream`…) |
 | Заголовок вкладки | `index.html` → `<title>` |
